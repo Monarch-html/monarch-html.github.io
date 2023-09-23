@@ -2,19 +2,19 @@
 
 let logo_header = document.querySelector('.logo-header')
 logo_header.addEventListener('click', function(){
-    if(document.location == 'http://127.0.0.1:5500/main_page.html'){
+    if(document.location == 'http://127.0.0.1:5500/index.html'){
         document.location.reload()
     }else{
-        document.location.assign('main_page.html')
+        document.location.assign('index.html')
     }
 })
 
 let logo_footer = document.querySelector('.logo-footer')
 logo_footer.addEventListener('click', function(){
-    if(document.location == 'http://127.0.0.1:5500/main_page.html'){
+    if(document.location == 'http://127.0.0.1:5500/index.html'){
          document.location.reload()
     }else{
-        document.location.assign('main_page.html')
+        document.location.assign('index.html')
     }
 })
 
@@ -100,7 +100,7 @@ function catalog(){
     let current_category = 'Кольца'
     let category_btn = document.querySelectorAll('.category-btn')
     for(i=0; i<category_btn.length; i+=1){
-        
+
         let select_category = category_btn[i]
         select_category.addEventListener('click', function(){
             for(i=0; i<category_btn.length; i+=1){
@@ -186,7 +186,7 @@ function cart(){
         }
     })
 }
-if(document.location == 'http://127.0.0.1:5500/main_page.html'){
+if(document.location == 'http://127.0.0.1:5500/index.html'){
     main()
 }else if(document.location == 'http://127.0.0.1:5500/catalog_page.html'){
     catalog()
