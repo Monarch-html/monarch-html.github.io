@@ -1,0 +1,93 @@
+.top-line-item:hover {
+    text-decoration: underline;
+}
+.top-line-item:active {
+    text-decoration: none;
+}
+.btn:hover {
+    background: var(--white);
+    color: var(--accent);
+}
+.btn:active {
+    border-style: ridge;
+}
+.brend-card:hover {
+    transform: scale(1.1);
+}
+.category:hover, .article:hover {
+    transform: scale(1.1);
+}
+.footer-list-item:hover, .footer-list-item a:hover {
+    text-decoration: none;
+}
+.footer-list-item:active {
+    transform: scale(0.9);
+}
+.contact:hover {
+    transform: scale(1.1);
+}
+.contact:active {
+    transform: scale(0.9);
+}
+.product-card:hover {
+    transform: scale(1.1);
+    padding: none;
+}
+.product-card:hover .product-price{
+    display: flex;
+    padding: 10px 0;
+}
+.menu-svg:hover, .cart-btn:hover {
+    border-radius: 100%;
+    background: rgba(153, 153, 153, 0.5);
+}
+.menu-svg:active, .cart-btn:active {
+    transform: scale(0.9);
+}
+.menu-btn ul li:hover {
+    opacity: 0.8;
+}
+.menu-btn ul li:active {
+    opacity: 0.5;
+}
+@keyframes AddToCartHover {
+    0% {
+        position: absolute;
+        width: 0;
+        visibility: hidden;
+    }
+    1% {
+        position: static;
+        visibility: visible;
+    }
+    100% {
+        position: static;
+        width: 150px;
+        visibility: visible;
+    }    
+}
+.add-to-cart:hover .add-to-cart-text {
+    animation: AddToCartHover 0.3s linear normal forwards;
+}
+.add-to-cart:active {
+    transform: scale(0.9);
+}
+.minus:hover, .plus:hover {
+    background: var(--lightgrey);
+    border-radius: 25px;
+    transform: scale(1.1);
+}
+.minus:hover svg, .plus:hover svg {
+    color: var(--white);
+}
+.trash:hover {
+    background: var(--gold);
+    border-radius: 25px;
+    transform: scale(1.1);
+}
+.trash:hover svg{
+    color: var(--white);
+}
+.trash:active, .minus:active, .plus:active {
+    transform: scale(0.9);
+}
