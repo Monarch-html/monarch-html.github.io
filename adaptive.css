@@ -173,6 +173,9 @@
     .article p {
         width: 170px;
     }
+    .logo-footer {
+        margin: 20px;
+    }
     .footer-lists {
         flex-direction: column;
         flex-wrap: nowrap;
