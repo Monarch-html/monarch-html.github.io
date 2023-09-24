@@ -129,6 +129,9 @@
     .top-line-left, .account, .cart-btn {
         display: none;
     }
+    .logo-header {
+        transform: scale(0.7);
+    }
     .menu-btn .first-menu {
         width: 150px;
     }
