@@ -57,12 +57,12 @@ function main(){
     
     let catalog_btn = document.querySelector('.catalog-btn')
     catalog_btn.addEventListener('click', function(){
-        document.location.replace('catalog_page.html')
+        document.location.replace('https://monarch-html.github.io/catalog_page.html')
     })
 
     let cart_btn = document.querySelector('.cart-btn')
     cart_btn.addEventListener('click', function(){
-        document.location.replace('cart_page.html')
+        document.location.replace('https://monarch-html.github.io/cart_page.html')
     })
     let menu_btn = document.querySelector('.menu-btn')
     let menu_svg = menu_btn.querySelector('.menu-svg')
@@ -156,7 +156,7 @@ function catalog(){
     
     let cart_btn = document.querySelector('.cart-btn')
     cart_btn.addEventListener('click', function(){
-        document.location.replace('cart_page.html')
+        document.location.replace('https://monarch-html.github.io/cart_page.html')
     })
     let menu_btn = document.querySelector('.menu-btn')
     let menu_svg = menu_btn.querySelector('.menu-svg')
@@ -190,6 +190,6 @@ if(document.location == 'https://monarch-html.github.io/index.html'){
     main()
 }else if(document.location == 'https://monarch-html.github.io/catalog_page.html'){
     catalog()
-}else if(document.location == 'https://monarch-html.github.io/cart_page.html'){
+}else if(document.location == 'https://monarch-html.github.io/https://monarch-html.github.io/cart_page.html'){
     cart()
 }
