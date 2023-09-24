@@ -175,6 +175,7 @@ function catalog(){
 
 
 function cart(){
+
     let menu_btn = document.querySelector('.menu-btn')
     let menu_svg = menu_btn.querySelector('.menu-svg')
     let first_menu = menu_btn.querySelector('.first-menu')
@@ -186,6 +187,8 @@ function cart(){
         }
     })
 }
+
+
 if(document.location == 'https://monarch-html.github.io/index.html'){
     main()
 }else if(document.location == 'https://monarch-html.github.io/catalog_page.html'){

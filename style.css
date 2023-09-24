@@ -64,7 +64,7 @@ body {
 
 header {
     width: 100%;
-    height: min-content;
+    height: 150px;
     display: flex;
     justify-content: center;
     background: var(--accent);
@@ -182,7 +182,7 @@ header {
 /* main */
 
 main {
-    margin-top: 120px;
+    margin-top: 150px;
 }
 
 #main {
