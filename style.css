@@ -97,7 +97,7 @@ header {
     cursor: pointer;
 }
 .logo-header {
-    padding: 0 10px;
+    padding: 0;
 }
 .top-line-right {
     display: flex;
