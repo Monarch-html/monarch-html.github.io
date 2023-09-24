@@ -200,3 +200,81 @@
         right: 25px;
     }
 }
+@media (max-width: 480px){
+    header {
+        height: 80px;
+        width: 100%;
+    }
+    main {
+        margin-top: 80px;
+    }
+    .top-line, .second-block, .fourth-block, .footer-block, .cart-products-list {
+        width: 380px;
+    }
+    .top-line-left, .account, .cart-btn {
+        display: none;
+    }
+    .top-line-item {
+        column-gap: 2px;
+    }
+    .logo-header .logo{
+        width: 225px;
+        height: 65px;
+    }
+    .menu-btn .first-menu {
+        width: 150px;
+    }
+    .top-line-right {
+        column-gap: 10px;
+    }
+    .brends-list {
+        width: 380px;
+        height: 35px;
+    }
+    .category-list, .articles {
+        width: 380px;
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+    .category {
+        width: 180px;
+        height: 230px;
+    }
+    .articles {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .article {
+        width: 250px;
+        height: 300px;
+    }
+    .article p {
+        width: 170px;
+    }
+    .logo-footer {
+        margin: 20px;
+    }
+    .footer-lists {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: max-content;
+    }
+    .footer-list-partners {
+        margin-left: 0px;
+    }
+    .footer-list {
+        width: 270px;
+        margin: 20px;
+    }
+    .category-row {
+        width: 450px;
+        column-gap: 30px;
+    }
+    .cart-product-card {
+        column-gap: 20px;
+        padding: 20px;
+    }
+    .cart-count-block {
+        right: 25px;
+    }
+}
