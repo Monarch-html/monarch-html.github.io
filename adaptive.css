@@ -122,3 +122,59 @@
         right: 25px;
     }
 }
+@media (max-width: 720px){
+    .top-line, .second-block, .fourth-block, .footer-block, .cart-products-list {
+        width: 400px;
+    }
+    .top-line-left, .account, .cart-btn {
+        display: none;
+    }
+    .menu-btn .first-menu {
+        width: 150px;
+    }
+    .top-line-right {
+        column-gap: 10px;
+    }
+    .brends-list {
+        width: 450px;
+        height: 40px;
+    }
+    .category-list, .articles {
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+    .category {
+        width: 190px;
+        height: 230px;
+    }
+    .article {
+        width: 190px;
+        height: 300px;
+    }
+    .article p {
+        width: 170px;
+    }
+    .footer-lists {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: max-content;
+    }
+    .footer-list-partners {
+        margin-left: 0px;
+    }
+    .footer-list {
+        width: 270px;
+        margin: 20px;
+    }
+    .category-row {
+        width: 450px;
+        column-gap: 30px;
+    }
+    .cart-product-card {
+        column-gap: 20px;
+        padding: 20px;
+    }
+    .cart-count-block {
+        right: 25px;
+    }
+}
