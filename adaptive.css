@@ -154,11 +154,12 @@
         height: 35px;
     }
     .category-list, .articles {
+        width: 380px;
         column-gap: 20px;
         row-gap: 20px;
     }
     .category {
-        width: 190px;
+        width: 180px;
         height: 230px;
     }
     .articles {
