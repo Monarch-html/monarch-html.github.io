@@ -154,7 +154,7 @@ header {
     width: 250px;
     top: 50px;
     right: 0;
-    /*display: none;*/
+    display: none;
 }
 .menu-btn ul li {
     color: var(--white);
