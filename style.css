@@ -97,7 +97,7 @@ header {
     cursor: pointer;
 }
 .logo-header {
-    height: 120px;
+    padding: 0 10px;
 }
 .top-line-right {
     display: flex;
@@ -154,7 +154,7 @@ header {
     width: 250px;
     top: 50px;
     right: 0;
-    display: none;
+    /*display: none;*/
 }
 .menu-btn ul li {
     color: var(--white);
@@ -638,8 +638,8 @@ footer{
     cursor: pointer;
 }
 .uzcard {
-    width: 60px;
-    height: 80px;
+    width: 45px;
+    height: 60px;
     background: url(images/uzcard_logo.png) no-repeat;
     background-size: cover;
     cursor: pointer;

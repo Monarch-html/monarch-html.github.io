@@ -125,6 +125,7 @@
 @media (max-width: 720px){
     header {
         height: 120px;
+        width: max-content;
     }
     main {
         margin-top: 120px;
@@ -135,7 +136,10 @@
     .top-line-left, .account, .cart-btn {
         display: none;
     }
-    .logo-header {
+    .top-line-item {
+        column-gap: 2px;
+    }
+    .logo-header .logo{
         width: 270px;
         height: 76px;
     }
@@ -146,8 +150,8 @@
         column-gap: 10px;
     }
     .brends-list {
-        width: 450px;
-        height: 40px;
+        width: 350px;
+        height: 35px;
     }
     .category-list, .articles {
         column-gap: 20px;
@@ -157,8 +161,12 @@
         width: 190px;
         height: 230px;
     }
+    .articles {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     .article {
-        width: 190px;
+        width: 250px;
         height: 300px;
     }
     .article p {
