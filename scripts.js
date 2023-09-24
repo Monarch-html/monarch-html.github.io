@@ -2,7 +2,7 @@
 
 let logo_header = document.querySelector('.logo-header')
 logo_header.addEventListener('click', function(){
-    if(document.location == 'http://127.0.0.1:5500/index.html'){
+    if(document.location == 'https://monarch-html.github.io/index.html'){
         document.location.reload()
     }else{
         document.location.assign('index.html')
@@ -11,7 +11,7 @@ logo_header.addEventListener('click', function(){
 
 let logo_footer = document.querySelector('.logo-footer')
 logo_footer.addEventListener('click', function(){
-    if(document.location == 'http://127.0.0.1:5500/index.html'){
+    if(document.location == 'https://monarch-html.github.io/index.html'){
          document.location.reload()
     }else{
         document.location.assign('index.html')
@@ -186,10 +186,10 @@ function cart(){
         }
     })
 }
-if(document.location == 'http://127.0.0.1:5500/index.html'){
+if(document.location == 'https://monarch-html.github.io/index.html'){
     main()
-}else if(document.location == 'http://127.0.0.1:5500/catalog_page.html'){
+}else if(document.location == 'https://monarch-html.github.io/catalog_page.html'){
     catalog()
-}else if(document.location == 'http://127.0.0.1:5500/cart_page.html'){
+}else if(document.location == 'https://monarch-html.github.io/cart_page.html'){
     cart()
 }
