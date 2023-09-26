@@ -1,3 +1,6 @@
+document.location.reload()
+
+
 /* функции для header */
 
 let logo_header = document.querySelector('.logo-header')
@@ -41,13 +44,6 @@ menu_svg.addEventListener('click', function(){
     }
 })
 
-let category_list = document.querySelectorAll('.category')
-for(i=0; i<category_list.length; i+=1){
-    category_list[i].addEventListener('click', function(){
-        document.location.replace('https://monarch-html.github.io/catalog_page.html')
-        current_category = category_list[i].innerHTML
-    })
-}
 let footer_navigation_btn = document.querySelectorAll('.footer-navigation-btn')
 for(i=0; i<footer_navigation_btn.length; i+=1){
     footer_navigation_btn[i].addEventListener('click', function(){
@@ -91,6 +87,13 @@ function main(){
     catalog_btn.addEventListener('click', function(){
         document.location.replace('https://monarch-html.github.io/catalog_page.html')
     })
+    let category_list = document.querySelectorAll('.category')
+    for(i=0; i<category_list.length; i+=1){
+        category_list[i].addEventListener('click', function(){
+            document.location.replace('https://monarch-html.github.io/catalog_page.html')
+            current_category = category_list[i].innerHTML
+        })
+    }
 }
 
 class Product{
