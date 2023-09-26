@@ -74,6 +74,14 @@ function main(){
             first_menu.style.display = 'block'
         }
     })
+
+    let category_list = document.querySelectorAll('.category')
+    for(i=0; i<category_list.length; i+=1){
+        category_list[i].addEventListener('click', function(){
+            document.location.replace('https://monarch-html.github.io/catalog_page.html')
+            current_category = category_list[i].innerHTML
+        })
+    }
 }
 
 class Product{
