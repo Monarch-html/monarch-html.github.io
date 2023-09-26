@@ -26,6 +26,38 @@ for( i=0; i<top_line_items.length; i+=1){
     })
 }
 
+let cart_btn = document.querySelector('.cart-btn')
+cart_btn.addEventListener('click', function(){
+    document.location.replace('https://monarch-html.github.io/cart_page.html')
+})
+let menu_btn = document.querySelector('.menu-btn')
+let menu_svg = menu_btn.querySelector('.menu-svg')
+let first_menu = menu_btn.querySelector('.first-menu')
+menu_svg.addEventListener('click', function(){
+    if(first_menu.style.display == 'block'){
+        first_menu.style.display = 'none'
+    }else{
+        first_menu.style.display = 'block'
+    }
+})
+
+let category_list = document.querySelectorAll('.category')
+for(i=0; i<category_list.length; i+=1){
+    category_list[i].addEventListener('click', function(){
+        document.location.replace('https://monarch-html.github.io/catalog_page.html')
+        current_category = category_list[i].innerHTML
+    })
+}
+let footer_navigation_btn = document.querySelectorAll('.footer-navigation-btn')
+for(i=0; i<footer_navigation_btn.length; i+=1){
+    footer_navigation_btn[i].addEventListener('click', function(){
+        document.location.replace('https://monarch-html.github.io/catalog_page.html')
+        current_category = footer_navigation_btn[i].innerHTML
+    })
+}
+
+
+
 function main(){
     /* функции для first-block */
     
@@ -59,29 +91,6 @@ function main(){
     catalog_btn.addEventListener('click', function(){
         document.location.replace('https://monarch-html.github.io/catalog_page.html')
     })
-
-    let cart_btn = document.querySelector('.cart-btn')
-    cart_btn.addEventListener('click', function(){
-        document.location.replace('https://monarch-html.github.io/cart_page.html')
-    })
-    let menu_btn = document.querySelector('.menu-btn')
-    let menu_svg = menu_btn.querySelector('.menu-svg')
-    let first_menu = menu_btn.querySelector('.first-menu')
-    menu_svg.addEventListener('click', function(){
-        if(first_menu.style.display == 'block'){
-            first_menu.style.display = 'none'
-        }else{
-            first_menu.style.display = 'block'
-        }
-    })
-
-    let category_list = document.querySelectorAll('.category')
-    for(i=0; i<category_list.length; i+=1){
-        category_list[i].addEventListener('click', function(){
-            document.location.replace('https://monarch-html.github.io/catalog_page.html')
-            current_category = category_list[i].innerHTML
-        })
-    }
 }
 
 class Product{
@@ -161,21 +170,6 @@ function catalog(){
     }
     get_poducts()
     add_to_cart()
-    
-    let cart_btn = document.querySelector('.cart-btn')
-    cart_btn.addEventListener('click', function(){
-        document.location.replace('https://monarch-html.github.io/cart_page.html')
-    })
-    let menu_btn = document.querySelector('.menu-btn')
-    let menu_svg = menu_btn.querySelector('.menu-svg')
-    let first_menu = menu_btn.querySelector('.first-menu')
-    menu_svg.addEventListener('click', function(){
-        if(first_menu.style.display == 'block'){
-            first_menu.style.display = 'none'
-        }else{
-            first_menu.style.display = 'block'
-        }
-    })
 }
 
 
@@ -183,17 +177,6 @@ function catalog(){
 
 
 function cart(){
-
-    let menu_btn = document.querySelector('.menu-btn')
-    let menu_svg = menu_btn.querySelector('.menu-svg')
-    let first_menu = menu_btn.querySelector('.first-menu')
-    menu_svg.addEventListener('click', function(){
-        if(first_menu.style.display == 'block'){
-            first_menu.style.display = 'none'
-        }else{
-            first_menu.style.display = 'block'
-        }
-    })
 }
 
 

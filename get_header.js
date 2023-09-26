@@ -116,12 +116,12 @@ let footer_code = `<div class="footer-block">
     <div class="footer-lists p-14r">
         <ol class="footer-list">
             <p class="list-header p-24r">Магазин</p>
-            <li class="footer-list-item">Кольца</li>
-            <li class="footer-list-item">Ожерелья</li>
-            <li class="footer-list-item">Серьги</li>
-            <li class="footer-list-item">Браслеты</li>
-            <li class="footer-list-item">Часы</li>
-            <li class="footer-list-item">Прочее</li>
+            <li class="footer-list-item footer-navigation-btn">Кольца</li>
+            <li class="footer-list-item footer-navigation-btn">Ожерелья</li>
+            <li class="footer-list-item footer-navigation-btn">Серьги</li>
+            <li class="footer-list-item footer-navigation-btn">Браслеты</li>
+            <li class="footer-list-item footer-navigation-btn">Часы</li>
+            <li class="footer-list-item footer-navigation-btn">Прочее</li>
         </ol>
         <ol class="footer-list">
             <p class="list-header p-24r">Информация</p>
