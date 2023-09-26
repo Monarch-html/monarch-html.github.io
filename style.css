@@ -96,9 +96,6 @@ header {
 .logo {
     cursor: pointer;
 }
-.logo-header {
-    padding: 0;
-}
 .top-line-right {
     display: flex;
     flex-direction: row;
@@ -589,7 +586,7 @@ footer{
     width: 1410px;
     padding-top: 30px;
 }
-.footer-logo {
+.logo-footer {
     margin-bottom: 30px;
 }
 .footer-lists {
