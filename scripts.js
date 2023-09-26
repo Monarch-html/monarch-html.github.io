@@ -1,6 +1,3 @@
-document.location.reload()
-
-
 /* функции для header */
 
 let logo_header = document.querySelector('.logo-header')
