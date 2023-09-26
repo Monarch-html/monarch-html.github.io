@@ -183,7 +183,7 @@ function cart(){
 }
 
 
-if(document.location == 'https://monarch-html.github.io/index.html'){
+if(document.location == 'https://monarch-html.github.io/index.html' || document.location == 'https://monarch-html.github.io'){
     main()
 }else if(document.location == 'https://monarch-html.github.io/catalog_page.html'){
     catalog()
