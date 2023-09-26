@@ -589,6 +589,9 @@ footer{
     width: 1410px;
     padding-top: 30px;
 }
+.footer-logo {
+    margin-bottom: 30px;
+}
 .footer-lists {
     display: flex;
     flex-direction: row;
