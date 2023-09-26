@@ -127,8 +127,11 @@ function catalog(){
                     category.querySelector('.category-first').style.height = '80px'
                 }
                 category.classList.remove('selected-category')
+                if(category.innerHTML == current_category){
+                    category.classList.add('selected-category')
+                }
             }
-            select_category.classList.toggle('selected-category')
+            select_category.classList.add('selected-category')
             current_category = select_category.querySelector('.category-name').innerHTML
             get_poducts()
         })
