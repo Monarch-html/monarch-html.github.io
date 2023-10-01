@@ -127,7 +127,7 @@ function catalog(){
                     category.querySelector('.category-first').style.height = '80px'
                 }
                 category.classList.remove('selected-category')
-                if(category.querySelector('.category-name').innerHTML == current_category){
+                if(select_category.querySelector('.category-name').innerHTML == current_category){
                     category.classList.add('selected-category')
                 }
             }
