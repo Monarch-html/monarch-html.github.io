@@ -1,6 +1,6 @@
-@media (max-width: 1510px){
+@media (max-width: 1199.98px) {
     .top-line, .second-block, .fourth-block, .footer-block, .cart-products-list {
-        width: 1260px;
+        width: 880px;
     }
     .top-line-left {
         display: none;
@@ -9,7 +9,7 @@
         width: 200px;
     }
     .brends-list {
-        width: 1260px;
+        width: 880px;
         height: 100px;
     }
     .category {

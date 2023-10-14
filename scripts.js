@@ -1,8 +1,10 @@
 /* функции для header */
 
+var current_category = 'Кольца'
+
 let logo_header = document.querySelector('.logo-header')
 logo_header.addEventListener('click', function(){
-    if(document.location == 'https://monarch-html.github.io/index.html'){
+    if(document.location == 'http://127.0.0.1:5500/index.html'){
         document.location.reload()
     }else{
         document.location.assign('index.html')
@@ -11,7 +13,7 @@ logo_header.addEventListener('click', function(){
 
 let logo_footer = document.querySelector('.logo-footer')
 logo_footer.addEventListener('click', function(){
-    if(document.location == 'https://monarch-html.github.io/index.html'){
+    if(document.location == 'http://127.0.0.1:5500/index.html'){
          document.location.reload()
     }else{
         document.location.assign('index.html')
@@ -28,7 +30,7 @@ for( i=0; i<top_line_items.length; i+=1){
 
 let cart_btn = document.querySelector('.cart-btn')
 cart_btn.addEventListener('click', function(){
-    document.location.replace('https://monarch-html.github.io/cart_page.html')
+    document.location.assign('cart_page.html')
 })
 let menu_btn = document.querySelector('.menu-btn')
 let menu_svg = menu_btn.querySelector('.menu-svg')
@@ -44,8 +46,8 @@ menu_svg.addEventListener('click', function(){
 let footer_navigation_btn = document.querySelectorAll('.footer-navigation-btn')
 for(i=0; i<footer_navigation_btn.length; i+=1){
     footer_navigation_btn[i].addEventListener('click', function(){
-        document.location.replace('https://monarch-html.github.io/catalog_page.html')
-        current_category = footer_navigation_btn[i].innerHTML
+        document.location.assign('catalog_page.html')
+        var current_category = footer_navigation_btn[i].innerHTML
     })
 }
 
@@ -82,12 +84,12 @@ function main(){
     
     let catalog_btn = document.querySelector('.catalog-btn')
     catalog_btn.addEventListener('click', function(){
-        document.location.replace('https://monarch-html.github.io/catalog_page.html')
+        document.location.assign('catalog_page.html')
     })
     let category_list = document.querySelectorAll('.category')
     for(i=0; i<category_list.length; i+=1){
         category_list[i].addEventListener('click', function(){
-            document.location.replace('https://monarch-html.github.io/catalog_page.html')
+            document.location.assign('catalog_page.html')
             current_category = category_list[i].innerHTML
         })
     }
@@ -111,25 +113,24 @@ let products_list = [
     new Product('Кольцо Дракона', '2 500 000 сум', 'url(images/dragon-ring.jpg)', 'Кольца')
 ]
 
+let cart_products = []
 function catalog(){
     /* функции для catalog_page */
 
-    let current_category = 'Кольца'
     let category_btn = document.querySelectorAll('.category-btn')
     for(i=0; i<category_btn.length; i+=1){
-
         let select_category = category_btn[i]
+        if(select_category.querySelector('.category-name').innerHTML == current_category){
+            select_category.classList.add('selected-category')
+        }
         select_category.addEventListener('click', function(){
             for(i=0; i<category_btn.length; i+=1){
                 let category = category_btn[i]
                 if(category.classList.contains('selected-category') == false){
-                    category.querySelector('.category-first').style.width = '200px'
+                    category.querySelector('.category-first').style.width = '170px'
                     category.querySelector('.category-first').style.height = '80px'
                 }
                 category.classList.remove('selected-category')
-                if(select_category.querySelector('.category-name').innerHTML == current_category){
-                    category.classList.add('selected-category')
-                }
             }
             select_category.classList.add('selected-category')
             current_category = select_category.querySelector('.category-name').innerHTML
@@ -137,13 +138,13 @@ function catalog(){
         })
         select_category.addEventListener('mouseover', function(){
             if(select_category.classList.contains('selected-category') == false){
-                select_category.querySelector('.category-first').style.width = '210px'
+                select_category.querySelector('.category-first').style.width = '180px'
                 select_category.querySelector('.category-first').style.height = '90px'
             }
         })
         select_category.addEventListener('mouseout', function(){
             if(select_category.classList.contains('selected-category') == false){
-                select_category.querySelector('.category-first').style.width = '200px'
+                select_category.querySelector('.category-first').style.width = '170px'
                 select_category.querySelector('.category-first').style.height = '80px'
             }
         })
@@ -151,6 +152,16 @@ function catalog(){
 
     function add_to_cart(){
         let add_to_cart_btn = document.querySelectorAll('.add-to-cart')
+        for(i=0; i<add_to_cart_btn.length; i+=1){
+            add_to_cart_btn[i].addEventListener('click', function(){
+                let name = add_to_cart_btn[i].parentNode.querySelector('.product-name').innerHTML
+                for(i=0; i<products_list.length; i+=1){
+                    if(products_list[i].name == name){
+                        cart_products.push(products_list[i])
+                    }
+                }
+            })
+        }
     }
     
     function get_poducts(){
@@ -180,13 +191,61 @@ function catalog(){
 
 
 function cart(){
+    let cart_list = document.querySelector('.cart-products-list')
+    for(i=0; i<cart_products.length; i+=1){
+        cart_list.innerHTML += `<div class="cart-product-card">
+        <div style="background: ${cart_products[i].img_url}" class="cart-product-img"></div>
+        <div class="cart-product-text">
+            <p class="cart-product-name p-24r">${cart_products[i].name}</p>
+            <p class="cart-product-price p-14r">${cart_products[i].price}</p>
+        </div>
+        <div class="cart-count-block">
+            <div class="cart-count-change">
+                <div class="minus">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M18 12.998H6a1 1 0 0 1 0-2h12a1 1 0 0 1 0 2z"/>
+                    </svg>
+                </div>
+                <div class="number p-36b-upper">1</div>
+                <div class="plus">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M18 12.998h-5v5a1 1 0 0 1-2 0v-5H6a1 1 0 0 1 0-2h5v-5a1 1 0 0 1 2 0v5h5a1 1 0 0 1 0 2z"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="trash">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M6 19a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7H6v12M8 9h8v10H8V9m7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5Z"/>
+                </svg>
+            </div>
+        </div>
+    </div>`
+    }
 }
 
 
-if((document.location == 'https://monarch-html.github.io/index.html') || (document.location == 'https://monarch-html.github.io')){
+if(document.location == 'https://monarch-html.github.io/index.html'){
+    main()
+}else if(document.location == 'https://monarch-html.github.io/'){
+    main()
+}else if(document.location == 'http://127.0.0.1:5500/'){
+    main()
+}else if(document.location == 'http://127.0.0.1:5500/index.html'){
+    main()
+}else if(document.location == 'https://azyjewelry.000webhostapp.com/index.html'){
+    main()
+}else if(document.location == 'https://azyjewelry.000webhostapp.com/'){
     main()
 }else if(document.location == 'https://monarch-html.github.io/catalog_page.html'){
     catalog()
-}else if(document.location == 'https://monarch-html.github.io/https://monarch-html.github.io/cart_page.html'){
+}else if(document.location == 'http://127.0.0.1:5500/catalog_page.html'){
+    catalog()
+}else if(document.location == 'https://azyjewelry.000webhostapp.com/catalog_page.html'){
+    catalog()
+}else if(document.location == 'https://monarch-html.github.io/cart_page.html'){
+    cart()
+}else if(document.location == 'http://127.0.0.1:5500/cart_page.html'){
+    cart()
+}else if(document.location == 'https://azyjewelry.000webhostapp.com/cart_page.html'){
     cart()
 }
