@@ -34,6 +34,11 @@ body {
     font-weight: 400;
     text-transform: uppercase;
 }
+.p-16b-upper {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
 .p-24b-upper {
     font-size: 24px;
     font-weight: 700;
@@ -55,6 +60,11 @@ body {
     border: 2px solid var(--white);
     cursor: pointer;
     transition: all 0.3s linear;
+}
+.logo {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
 }
 
 
@@ -96,8 +106,9 @@ header {
     width: 350px;
     justify-content: space-between;
 }
-.logo {
-    cursor: pointer;
+.logo-header {
+    width: 300px;
+    height: 108px;
 }
 .top-line-right {
     display: flex;
@@ -372,7 +383,6 @@ main {
     row-gap: 80px;
 }
 .category-row {
-    width: 1180px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -380,8 +390,8 @@ main {
 }
 .category-btn {
     position: relative;
-    width: 180px;
-    height: 90px;
+    width: 120px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -397,16 +407,16 @@ main {
 }
 .selected-category .category-first {
     background: var(--accent);
-    width: 180px;
-    height: 90px;
+    width: 120px;
+    height: 60px;
 }
 .selected-category .category-second {
     display: none;
 }
 .category-first {
     box-sizing: border-box;
-    width: 170px;
-    height: 80px;
+    width: 110px;
+    height: 50px;
     position: absolute;
     top: 0;
     left: 0;
@@ -417,8 +427,8 @@ main {
 }
 .category-second {
     box-sizing: border-box;
-    width: 170px;
-    height: 80px;
+    width: 110px;
+    height: 50px;
     position: absolute;
     bottom: 0;
     right: 0;

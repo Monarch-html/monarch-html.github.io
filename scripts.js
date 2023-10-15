@@ -127,8 +127,8 @@ function catalog(){
             for(i=0; i<category_btn.length; i+=1){
                 let category = category_btn[i]
                 if(category.classList.contains('selected-category') == false){
-                    category.querySelector('.category-first').style.width = '170px'
-                    category.querySelector('.category-first').style.height = '80px'
+                    category.querySelector('.category-first').style.width = '110px'
+                    category.querySelector('.category-first').style.height = '50px'
                 }
                 category.classList.remove('selected-category')
             }
@@ -138,14 +138,14 @@ function catalog(){
         })
         select_category.addEventListener('mouseover', function(){
             if(select_category.classList.contains('selected-category') == false){
-                select_category.querySelector('.category-first').style.width = '180px'
-                select_category.querySelector('.category-first').style.height = '90px'
+                select_category.querySelector('.category-first').style.width = '120px'
+                select_category.querySelector('.category-first').style.height = '60px'
             }
         })
         select_category.addEventListener('mouseout', function(){
             if(select_category.classList.contains('selected-category') == false){
-                select_category.querySelector('.category-first').style.width = '170px'
-                select_category.querySelector('.category-first').style.height = '80px'
+                select_category.querySelector('.category-first').style.width = '110px'
+                select_category.querySelector('.category-first').style.height = '50px'
             }
         })
     }

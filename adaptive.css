@@ -1,4 +1,4 @@
-@media (max-width: 1199.98px) {
+@media (min-width: 1024px) and (max-width: 1280px) {
     .top-line, .second-block, .fourth-block, .footer-block, .cart-products-list {
         width: 880px;
     }
@@ -10,271 +10,226 @@
     }
     .brends-list {
         width: 880px;
-        height: 100px;
+        height: 70px;
     }
     .category {
-        width: 400px;
-        height: 440px;
+        width: 280px;
+        height: 360px;
+    }
+    .third-text-1, .third-header, .third-text-2, .third-text-3 {
+        max-width: 880px;
     }
     .article {
-        width: 400px;
-        height: 500px;
+        width: 280px;
+        height: 440px;
     }
-    .footer-list-partners {
-        margin-left: 90px;
+    .footer-lists {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .footer-list {
+        width: 280px;
+    }
+    .paymend-list {
+        margin-top: 80px;
     }
     .category-row {
-        width: 900px;
-        column-gap: 135px;
+        width: 400px;
+        row-gap: 10px;
     }
     .product-list {
-        width: 590px;
+        width: 880px;
     }
 }
-@media (max-width: 1360px){
+@media (min-width: 768px) and (max-width: 1023.98px) {
     .top-line, .second-block, .fourth-block, .footer-block, .cart-products-list {
-        width: 900px;
+        width: 620px;
     }
     .top-line-left {
         display: none;
     }
-    .menu-btn .first-menu {
-        width: 170px;
+    .top-line-right {
+        width: 220px;
     }
-    .brends-list {
-        width: 900px;
-        height: 80px;
-    }
-    .category {
-        width: 280px;
-        height: 350px;
-    }
-    .article {
-        width: 280px;
-        height: 400px;
-    }
-    .footer-lists {
-        flex-direction: column;
-        flex-wrap: wrap;
-        height: 710px;
-    }
-    .footer-list-partners {
-        margin-left: 0px;
-    }
-    .footer-list {
-        width: 410px;
-        margin: 20px;
-    }
-}
-@media (max-width: 1000px){
-    .top-line, .second-block, .fourth-block, .footer-block, .cart-products-list {
-        width: 620px;
-    }
-    .top-line-left, .account, .cart-btn {
+    .account {
         display: none;
     }
     .menu-btn .first-menu {
-        width: 150px;
+        width: 200px;
     }
-    .top-line-right {
-        column-gap: 10px;
+    .first-tagline {
+        font-size: 32px;
+        max-width: 620px;
     }
     .brends-list {
         width: 620px;
+        height: 45px;
+    }
+    .category {
+        width: 300px;
+        height: 390px;
+    }
+    .third-text-1, .third-header, .third-text-2, .third-text-3 {
+        max-width: 620px;
+    }
+    .articles {
+        gap: 10px;
+    }
+    .article {
+        width: 200px;
+        height: 320px;
+        padding-bottom: 20px;
+    }
+    .article p {
+        width: 160px;
+    }
+    .footer-lists {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        column-gap: 70px;
+        row-gap: 20px;
+    }
+    .footer-list {
+        width: 160px;
+    }
+    .footer-contact-list {
+        width: 300px;
+    }
+    .paymend-list {
+        margin-top: 60px;
+    }
+    .category-row {
+        width: 400px;
+        row-gap: 10px;
+    }
+    .product-list {
+        width: 580px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767.98px) {
+    .top-line, .second-block, .fourth-block, .footer-block, .cart-products-list {
+        width: 260px;
+    }
+    header {
+        height: 90px;
+    }
+    #main {
+        margin-top: 90px;
+    }
+    .top-line-left {
+        display: none;
+    }
+    .logo-header {
+        width: 190px;
+        height: 70px;
+    }
+    .top-line-right {
+        width: 30px;
+    }
+    .account, .top-line-search, .cart-btn {
+        display: none;
+    }
+    .menu-btn .first-menu {
+        width: 200px;
+    }
+    .first-tagline {
+        max-width: 260px;
+    }
+    .brends-list {
+        width: 260px;
+        height: 30px;
+    }
+    .category {
+        width: 120px;
+        height: 180px;
+        padding-bottom: 10px;
+    }
+    .third-text-1, .third-header, .third-text-2, .third-text-3 {
+        max-width: 260px;
+    }
+    .articles {
+        flex-direction: column;
+        align-items: center;
+    }
+    .article {
+        width: 160px;
+        height: 260px;
+        padding-bottom: 15px;
+    }
+    .article p {
+        width: 120px;
+    }
+    .footer-lists {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        row-gap: 20px;
+    }
+    .footer-list {
+        width: 260px;
+    }
+    .paymend-list {
+        margin-top: 60px;
+        width: 260px;
         height: 50px;
     }
-    .category-list, .articles {
-        column-gap: 25px;
-        row-gap: 25px;
-    }
-    .category {
-        width: 190px;
-        height: 230px;
-    }
-    .article {
-        width: 190px;
-        height: 300px;
-    }
-    .article p {
-        width: 170px;
-    }
-    .footer-lists {
-        flex-direction: column;
-        flex-wrap: nowrap;
-        height: max-content;
-    }
-    .footer-list-partners {
-        margin-left: 0px;
-    }
-    .footer-list {
-        width: 270px;
-        margin: 20px;
-    }
-    .category-row {
-        width: 520px;
-        column-gap: 100px;
-    }
-    .cart-product-card {
-        column-gap: 20px;
-        padding: 20px;
-    }
-    .cart-count-block {
-        right: 25px;
-    }
-}
-@media (max-width: 720px){
-    header {
-        height: 120px;
-        width: 100%;
-    }
-    main {
-        margin-top: 120px;
-    }
-    .top-line, .second-block, .fourth-block, .footer-block, .cart-products-list {
-        width: 380px;
-    }
-    .top-line-left, .account, .cart-btn {
+    .uzcard {
         display: none;
     }
-    .top-line-item {
-        column-gap: 2px;
-    }
-    .logo-header .logo{
-        width: 270px;
-        height: 76px;
-    }
-    .menu-btn .first-menu {
-        width: 150px;
-    }
-    .top-line-right {
-        column-gap: 10px;
-    }
-    .brends-list {
-        width: 380px;
-        height: 35px;
-    }
-    .category-list, .articles {
-        width: 380px;
-        column-gap: 20px;
-        row-gap: 20px;
-    }
-    .category {
-        width: 180px;
-        height: 230px;
-    }
-    .articles {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .article {
-        width: 250px;
-        height: 300px;
-    }
-    .article p {
-        width: 170px;
-    }
-    .logo-footer {
-        margin: 20px;
-    }
-    .footer-lists {
-        flex-direction: column;
-        flex-wrap: nowrap;
-        height: max-content;
-    }
-    .footer-list-partners {
-        margin-left: 0px;
-    }
-    .footer-list {
-        width: 270px;
-        margin: 20px;
-    }
     .category-row {
-        width: 450px;
-        column-gap: 30px;
+        width: 260px;
+        row-gap: 10px;
     }
-    .cart-product-card {
-        column-gap: 20px;
-        padding: 20px;
+    .product-list {
+        width: 260px;
     }
-    .cart-count-block {
-        right: 25px;
+
+
+
+
+    .p-12l {
+        font-size: 12px;
+        font-weight: 300;
     }
-}
-@media (max-width: 480px){
-    header {
-        height: 80px;
-        width: 100%;
+    .p-14r {
+        font-size: 14px;
+        font-weight: 400;
     }
-    main {
-        margin-top: 80px;
+    .p-24r {
+        font-size: 20px;
+        font-weight: 400;
     }
-    .top-line, .second-block, .fourth-block, .footer-block, .cart-products-list {
-        width: 380px;
+    .p-24r-titlecase{
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: capitalize;
     }
-    .top-line-left, .account, .cart-btn {
-        display: none;
+    .p-18r-upper {
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
     }
-    .top-line-item {
-        column-gap: 2px;
+    .p-24b-upper {
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
     }
-    .logo-header .logo{
-        width: 225px;
-        height: 65px;
+    .p-36b-upper {
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
     }
-    .menu-btn .first-menu {
-        width: 150px;
-    }
-    .top-line-right {
-        column-gap: 10px;
-    }
-    .brends-list {
-        width: 380px;
-        height: 35px;
-    }
-    .category-list, .articles {
-        width: 380px;
-        column-gap: 20px;
-        row-gap: 20px;
-    }
-    .category {
-        width: 180px;
-        height: 230px;
-    }
-    .articles {
-        flex-wrap: wrap;
+    
+    .btn {
+        display: flex;
+        align-items: center;
         justify-content: center;
-    }
-    .article {
-        width: 250px;
-        height: 300px;
-    }
-    .article p {
-        width: 170px;
-    }
-    .logo-footer {
-        margin: 20px;
-    }
-    .footer-lists {
-        flex-direction: column;
-        flex-wrap: nowrap;
-        height: max-content;
-    }
-    .footer-list-partners {
-        margin-left: 0px;
-    }
-    .footer-list {
-        width: 270px;
-        margin: 20px;
-    }
-    .category-row {
-        width: 450px;
-        column-gap: 30px;
-    }
-    .cart-product-card {
-        column-gap: 20px;
-        padding: 20px;
-    }
-    .cart-count-block {
-        right: 25px;
+        box-sizing: border-box;
+        width: 220px;
+        height: 30px;
+        border: 2px solid var(--white);
+        cursor: pointer;
+        transition: all 0.3s linear;
     }
 }
